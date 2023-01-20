@@ -1,0 +1,96 @@
+div#topDiv{
+    justify-content: center;  
+}
+button.btn{
+  margin:5px;
+  height: 50px;
+  text-align: center;
+  border-radius: 20%;
+  
+}
+input#userInput{
+    background-color: lightgray;
+    transition: background-color 1s;
+}
+input#userInput:hover{
+    background-color:lightpink;
+}
+div.wrap-boxes{
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+div.exDiv{
+    width: 100px;
+    height: 151px;
+    margin-bottom: 20px;
+}
+
+div.wrapImg {
+    height: 150px;
+    width: 99px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    transition:  filter 3s, transform 1s;
+
+}
+
+div.wrapImg:hover{
+    transform: scaleY(1.25);
+
+}
+
+
+button.boxBtn{
+    background-color: brown;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 6px;
+}
+
+
+span.nameSpan{
+    display: block !important;
+    position: absolute;
+    top: 30px;
+
+}
+
+div.selected{
+    color: white;
+    background-color: teal;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 50px;
+    height: 30px;
+    width: 75px;
+    border-radius: 25%;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    div.wrap-boxes{
+        grid-template-columns: repeat(6, 100px);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    div.wrap-boxes{
+        grid-template-columns: repeat(5, 100px);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    div.wrap-boxes{
+        grid-template-columns: repeat(2, 100px);
+    }
+}
