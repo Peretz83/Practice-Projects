@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+<div class="container">
+  <div class="input-group">
+    <input type="text" placeholder="Type here" #newTask>
+    <button (click)="add(newTask.value)" class="add-button">+</button>
+  </div>
+  <table>
+    <tr *ngFor="let task of tasks">
+      <td>
+        <p [class.is-done]="task.isDone">
+          {{task.title}}
+        </p>
+      </td>
+      <td>
+        <button (click)="remove(task)" class="remove-btn">X</button>
+        <button (click)="markAsDone(task)" class="done-btn">Done</button>
+      </td>
+    </tr>
+  </table>
+</div>
