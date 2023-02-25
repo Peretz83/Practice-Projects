@@ -1,9 +1,14 @@
 .myUl{
   display: flex;
-  width: 100%;
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(161, 161, 225);
+  display: flex;
+  align-items: center;
   
 }
 
 li{
   margin-left:40px;
-}
+  list-style-type: none;
+ }
